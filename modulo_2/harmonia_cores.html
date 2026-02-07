@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmonia de cores</title>
+
+    <style>
+        .circulo-cromatico {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            /* Transforma o quadrado em círculo */
+            background: conic-gradient(
+                rgb(255, 255, 0) 0% 8.33%,
+                rgb(255, 205, 0) 8.33% 16.66%,
+                rgb(255, 146, 0) 16.66% 25%,
+                rgb(255, 85, 0) 25% 33.33%,
+                rgb(255, 0, 0) 33.33% 41.6%,
+                rgb(200, 0, 150) 41.6% 50%,
+                rgb(140, 0, 180) 50% 58.33%,
+                rgb(138, 30, 238) 58.33% 66.66%,
+                rgb(0, 30, 255) 66.66% 75%,
+                rgb(0, 128, 100) 75% 83.33%,
+                rgb(0, 128, 0) 83.33% 91.66%,
+                rgb(172, 255, 47) 91.66% 100%
+            );
+        }
+
+        /* Cores Primárias */
+        .amarelo {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(255, 255, 0);
+        }
+
+        .vermelho {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(255, 0, 0);
+        }
+
+        .azul {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(0, 30, 255);
+        }
+
+        /* Cores Secundárias */
+        .laranja {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(255, 146, 0);
+        }
+
+        .violeta {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(140, 0, 180);
+        }
+
+        .verde {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(0, 128, 0);
+        }
+
+        /* Cores Terciárias */
+        .amarelo-esverdeado {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(172, 255, 47);
+        }
+
+        .amarelo-alaranjado {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(255, 205, 0);
+        }
+
+        .vermelho-alaranjado {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(255, 85, 0);
+        }
+
+        .vermelho-arroxeado {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(200, 0, 150);
+        }
+
+        .azul-arroxeado {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(138, 30, 238);
+        }
+
+        .azul-esverdeado {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(0, 128, 100);
+        }
+    </style>
+</head>
+
+<body style="font-family: Arial, Helvetica, sans-serif">
+    
+    <h1>Harmonia De Cores em CSS</h1>
+    <div class="circulo-cromatico"></div>
+
+    <p><b>Exemplo de paleta de cores</b></p>
+    <div style="display: flex; align-items: center; gap: 5px;">
+        <p>Cor 1:</p>
+        <div
+            style="display: flex; align-items: center; padding: 5px; width: 400px; height: 30px; background-color: #114b5f; color: #ddd;">
+            Verde-azulado escuro</div>
+        <p style="margin-left: -100px; color: #fff;"><b>#114B5F</b></p>
+    </div>
+    <div style="display: flex; align-items: center; gap: 5px;">
+        <p>Cor 2:</p>
+        <div
+            style="display: flex; align-items: center; padding: 5px; width: 400px; height: 30px; background-color: #1a936f; color: #ddd;">
+            Verde-mar</div>
+        <p style="margin-left: -100px; color: #fff;"><b>#1A936F</b></p>
+    </div>
+    <div style="display: flex; align-items: center; gap: 5px;">
+        <p>Cor 3:</p>
+        <div
+            style="display: flex; align-items: center; padding: 5px; width: 400px; height: 30px; background-color: #88d498;  color: #444;">
+            Celadon</div>
+        <p style="margin-left: -100px;"><b>#88D498</b></p>
+    </div>
+    <div style="display: flex; align-items: center; gap: 5px;">
+        <p>Cor 4:</p>
+        <div
+            style="display: flex; align-items: center; padding: 5px; width: 400px; height: 30px; background-color: #c6dabf;  color: #444;">
+            Chá Verde</div>
+        <p style="margin-left: -100px;"><b>#C6DABF</b></p>
+    </div>
+    <div style="display: flex; align-items: center; gap: 5px;">
+        <p>Cor 5:</p>
+        <div
+            style="display: flex; align-items: center; padding: 5px; width: 400px; height: 30px; background-color: #f3e9d2;  color: #444;">
+            Creme de Baunilha</div>
+        <p style="margin-left: -100px;"><b>#F3E9D2</b></p>
+    </div>
+
+    <hr>
+    <h1>Tabela de cores</h1>
+
+    <div class="tabela" style="display: flex; flex-direction: row; gap: 5px;">
+
+        <div class="cores_primarias" style="display: flex; flex-direction: column;">
+            <h2>Cores Primárias</h2>
+            <div style="display: flex; flex-direction: row;">
+                <div class="amarelo"></div>
+                <p style="margin-left: 10px;">Amarelo</p>
+            </div>
+            <div style="display: flex; flex-direction: row;">
+                <div class="vermelho"></div>
+                <p style="margin-left: 10px;">Vermelho</p>
+            </div>
+            <div style="display: flex; flex-direction: row;">
+                <div class="azul"></div>
+                <p style="margin-left: 10px;">Azul</p>
+            </div>
+        </div>
+
+        <div class="cores_secundarias" style="display: flex; flex-direction: column;">
+            <h2>Cores Secundárias</h2>
+            <div style="display: flex; flex-direction: row;">
+                <div class="laranja"></div>
+                <p style="margin-left: 10px;">Laranja</p>
+            </div>
+            <div style="display: flex; flex-direction: row;">
+                <div class="violeta"></div>
+                <p style="margin-left: 10px;">Violeta</p>
+            </div>
+            <div style="display: flex; flex-direction: row;">
+                <div class="verde"></div>
+                <p style="margin-left: 10px;">Verde</p>
+            </div>
+        </div>
+
+        <div class="cores_terciarias" style="display: flex; flex-direction: column;">
+            <h2>Cores Terciárias</h2>
+
+            <div style="display: flex; flex-direction: row; gap: 5px;">
+
+                <div style="display: flex; flex-direction: column;">
+                    <div style="display: flex; flex-direction: row;">
+                        <div class="amarelo-esverdeado"></div>
+                        <p style="margin-left: 10px;">
+                            Amarelo Esverdeado</p>
+                    </div>
+                    <div style="display: flex; flex-direction: row;">
+                        <div class="amarelo-alaranjado"></div>
+                        <p style="margin-left: 10px;">
+                            Amarelo Alaranjado</p>
+                    </div>
+                    <div style="display: flex; flex-direction: row;">
+                        <div class="vermelho-alaranjado"></div>
+                        <p style="margin-left: 10px;">
+                            Vemelho Alaranjado</p>
+                    </div>
+                </div>
+
+                <div style="display: flex; flex-direction: column;">
+                    <div style="display: flex; flex-direction: row;">
+                        <div class="vermelho-arroxeado"></div>
+                        <p style="margin-left: 10px;">
+                            Vermelho Arroxeado</p>
+                    </div>
+                    <div style="display: flex; flex-direction: row;">
+                        <div class="azul-arroxeado"></div>
+                        <p style="margin-left: 10px;">
+                            Azul Arroxeado</p>
+                    </div>
+                    <div style="display: flex; flex-direction: row;">
+                        <div class="azul-esverdeado"></div>
+                        <p style="margin-left: 10px;">
+                            Azul Esverdeado</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <h1>Temperatuda de Cores</h1>
+
+    <h2>Cores Frias</h2>
+    <div style="display: flex; flex-direction: row;">
+        <div class="violeta"></div>
+        <div class="azul-arroxeado"></div>
+        <div class="azul"></div>
+        <div class="azul-esverdeado"></div>
+        <div class="verde"></div>
+        <div class="amarelo-esverdeado"></div>
+    </div>
+
+    <h2>Cores Quentes</h>
+    <div style="display: flex; flex-direction: row;">
+        <div class="amarelo"></div>
+        <div class="amarelo-alaranjado"></div>
+        <div class="laranja"></div>
+        <div class="vermelho-alaranjado"></div>
+        <div class="vermelho"></div>
+        <div class="vermelho-arroxeado"></div>
+    </div>
+
+    <h1>Cores Complementares</h1>
+    <p>Cor imediatamente oposta a outra no Circulo Cromático</p>
+    <div class="cores_complementares" style="display: flex; flex-direction: row; gap: 10px;">
+        <div style="display: flex; flex-direction: row;">
+            <div class="violeta"></div>
+            <div class="amarelo"></div>
+        </div>
+        <div style="display: flex; flex-direction: row;">
+            <div class="azul-arroxeado"></div>
+            <div class="amarelo-alaranjado"></div>
+        </div>
+        <div style="display: flex; flex-direction: row;">
+            <div class="azul"></div>
+            <div class="laranja"></div>
+        </div>
+        <div style="display: flex; flex-direction: row;">
+            <div class="azul-esverdeado"></div>
+            <div class="vermelho-alaranjado"></div>
+        </div>
+        <div style="display: flex; flex-direction: row;">
+            <div class="verde"></div>
+            <div class="vermelho"></div>
+        </div>
+        <div style="display: flex; flex-direction: row;">
+            <div class="amarelo-esverdeado"></div>
+            <div class="vermelho-arroxeado"></div>
+        </div>
+    </div>
+
+    <hr>
+    <h1>Cores Análogas e uma Complementar</h1>
+    <p>Cores análogas, são as cores vizinhas da cor principal no circulo cromático</p>
+    <div class="cor_analog" style="display: flex; flex-direction: row;">
+        <div class="azul-esverdeado"></div>
+        <div class="verde"></div>
+        <div class="amarelo-esverdeado"></div>
+    </div>
+
+    <hr>
+    <h2>Monte sua paleta de cores</h2>
+    <p>Uma paleta de cores deve ter no mínimo 3 cores e no máximo 5.</p>
+    <p style="margin-top: -20px;">Ex.:</p>
+
+    <p><b>Cor Principal:</b> Violeta <br>
+        <b>Cor Complementar:</b> Amarelo
+    </p>
+    <div class="paleta" style="display: flex; flex-direction: row;">
+        <div class="azul-arroxeado"></div>
+        <div class="violeta"></div>
+        <div class="vermelho-arroxeado"></div>
+        <div class="amarelo"></div>
+    </div>
+
+    <p><b>Cor Principal:</b> Laranja <br>
+        <b>Cor Complementar:</b> Azul
+    </p>
+    <div class="paleta" style="display: flex; flex-direction: row;">
+        <div class="amarelo-alaranjado"></div>
+        <div class="laranja"></div>
+        <div class="vermelho-alaranjado"></div>
+        <div class="azul"></div>
+    </div>
+
+    <hr>
+    <h2>Cores Análogas Relacionadas</h2>
+    <p>Cores que criam contraste mais leve. <br>
+        Duas cores vizinhas &lpar;não 3&rpar; como principais; pula a próxima vizina e usar a cor que está
+        imediatamente depois. <br>
+        Ex.: </p>
+
+    <p><b>Cor Principal:</b> Amarelo e Amarelo Alaranjado</p>
+    <div class="paleta" style="display: flex; flex-direction: row;">
+        <div class="amarelo"></div>
+        <div class="amarelo-alaranjado"></div>
+        <div class="vermelho-alaranjado"></div>
+    </div>
+    <p>Esse "pular" é valido tanto para um lado quanto para o outro. Veja:</p>
+    <div class="paleta" style="display: flex; flex-direction: row;">
+        <div class="amarelo"></div>
+        <div class="amarelo-alaranjado"></div>
+        <div class="verde"></div>
+    </div>
+
+    <hr>
+    <h2>Cores Intercaladas</h2>
+    <p>São as cores de tons não complementares. <br>Ex.:</p>
+    <p><b>Cor Principal:</b> Amarelo</p>
+    <div class="paleta" style="display: flex; flex-direction: row;">
+        <div class="amarelo"></div>
+        <div class="laranja"></div>
+        <div class="vermelho"></div>
+    </div>
+    <p><b>Cor Principal:</b> Amarelo esverdeado</p>
+    <div class="paleta" style="display: flex; flex-direction: row;">
+        <div class="amarelo-esverdeado"></div>
+        <div class="verde"></div>
+        <div class="azul-arroxeado"></div>
+    </div>
+
+    <hr>
+    <h2>Cores Triádicas</h2>
+    <p>Cores que estão simetricamente distribuídas no circulo cromático que formam um triângulo equilátero.</p>
+    <p><b>Cor Principal:</b> Vemelho</p>
+    <div class="paleta" style="display: flex; flex-direction: row;">
+        <div class="vermelho"></div>
+        <div class="azul"></div>
+        <div class="amarelo"></div>
+    </div>
+    <p><b>Cor Principal:</b> Azul Arroxeado</p>
+    <div class="paleta" style="display: flex; flex-direction: row;">
+        <div class="azul-arroxeado"></div>
+        <div class="amarelo-esverdeado"></div>
+        <div class="vermelho-alaranjado"></div>
+    </div>
+
+    <hr>
+    <h2>Cores em Quadrado</h2>
+    <p>Cores que estão simetricamente distribuídas no circulo cromático que formam um quadrado.</p>
+    <p><b>Cor Principal:</b> Amarelo</p>
+    <div class="paleta" style="display: flex; flex-direction: row;">
+        <div class="amarelo"></div>
+        <div class="vermelho-alaranjado"></div>
+        <div class="violeta"></div>
+        <div class="azul-esverdeado"></div>
+    </div>
+
+    <hr>
+    <h2>Cores Tetrádicas</h2>
+    <p>Cores que estão distribuídas no circulo cromático que formam um retângulo. <br>
+        Escolha uma cor e selecione seu oposto. Pule uma cor, use a próxima e selecione seu oposto.</p>
+    <p><b>Cor Principal:</b> Verde</p>
+    <div class="paleta" style="display: flex; flex-direction: row;">
+        <div class="verde"></div>
+        <div class="vermelho"></div>
+        <div class="laranja"></div>
+        <div class="azul"></div>
+    </div>
+    <p><b>Cor Principal:</b> Azul</p>
+    <div class="paleta" style="display: flex; flex-direction: row;">
+        <div class="azul"></div>
+        <div class="laranja"></div>
+        <div class="violeta"></div>
+        <div class="amarelo"></div>
+    </div>
+
+    <hr>
+    <h2>Monocromia</h2>
+    <p>A monocromia caracteriza-se pelo uso de uma só cor, porém modificando duas características: saturação e
+        brilho.</p>
+    <p><b>Cor Principal:</b> Laranja</p>
+    <div class="paleta" style="display: flex; flex-direction: row;">
+        <div class="laranja"></div>
+        <div style="width: 50px; height: 50px;
+        background-color: hsl(34, 100%, 40%);"></div>
+        <div style="width: 50px; height: 50px;
+        background-color: hsl(34, 100%, 30%);"></div>
+        <div style="width: 50px; height: 50px;
+        background-color: hsl(34, 100%, 20%);"></div>
+    </div>
+    <p><b>Cor Principal:</b> Verde</p>
+    <div class="paleta" style="display: flex; flex-direction: row;">
+        <div style="width: 50px; height: 50px;
+        background-color: hsl(120, 100%, 20%);"></div>
+        <div style="width: 50px; height: 50px;
+        background-color: hsl(120, 100%, 30%);"></div>
+        <div style="width: 50px; height: 50px;
+        background-color: hsl(120, 100%, 40%);"></div>
+        <div style="width: 50px; height: 50px;
+        background-color: hsl(120, 100%, 50%);"></div>
+    </div>
+    <hr>
+</body>
+
+</html>

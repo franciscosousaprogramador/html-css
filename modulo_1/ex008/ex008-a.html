@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 008</title>
+</head>
+<body>
+    <h2>Capítulo 08</h2>
+    <h3 style="color: blue;">Ex008-A - 31/10/2025</h3>
+    <h1>Formatacão de textos</h1>
+    
+    <hr>
+    
+    <h1>Principais formatações</h1>
+    <p>Existem duas formas de se usar cada tipo de formatação. Uma semântica e outra não semântica.</p>
+
+    <h2>Negrito / Destaque</h2>
+    <p>Exemplo não semântico: <br>
+        Nesta frase temos um <b>termo em negrito</b> usando a tag B.
+    </p>
+    <p>Exemplo semântico: <br>
+        Nesta frase, temos um <strong>termo em destaque</strong> usando a tag STRONG.
+    </p>
+    
+    <h2>Itálico / Ênfase</h2>
+    <p>Exemplo não semântico: <br>
+        Nesta frase, temos um <i>termo em itálico</i> usando a tag I.
+    </p>
+    <p>Exemplo semântico: <br>
+        Nesta frase, temos um <em>termo em ênfase</em> usando a tag EM.
+    </p>
+    <br>
+    <hr>
+    <h3 style="color: blue;">Ex008 (Continuação) - 01/11/2025</h3>
+
+    <h2>Texto marcado</h2>
+    <p>Podemos criar também <mark style="background-color: lime;">um texto marcado</mark> usando a tag MARK.</p>
+    <p>E no outro parágrafo, temos <mark>outro texto marcado</mark> no final.</p>
+
+    <p>Uma forma de mudar a <mark style="background-color: red; color: white;">c</mark><mark style="background-color: green; color: white;">o</mark><mark style="background-color: blue; color: white;">r</mark> do marcador, use:</p>
+    <p style="margin-top: -14px;">
+        <mark style="font-family: 'Courier New', Courier, monospace;
+        background-color: black;
+        color: white;">
+        style="background-color: cor"</mark> dentro da tag MARK.<br>
+        Essa forma é aplicada somente ao marcador que tem a tag STYLE.
+    </p>
+    <p>Outra forma, é criar uma tag STYLE dentro de HEADER. <br>Ex.:</p>
+    <p style="background-color: black; color: white; font-family: 'Courier New', Courier, monospace; padding: 10px; width: 360px; margin-top: -16px;"> 
+        &lt;style> <br>
+        ....mark { <br>
+        ........background-color: limegreen; <br>
+        ....} <br>
+        &lt;/style>
+    </p>
+    <p style="margin-top: -10px;">Esse método é aplicado a todos os markers desta página.</p>
+    <p>
+        Existe ainda uma terceira técnica que consiste em criar um arquivo CSS separado para colocar os estilos. <br>
+        Essa forma permite, por meio de um link, usar o mesmo estilo em várias páginas sem ter que duplicar código.
+    </p>
+
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> nesse parágrafo. <br>
+        Para deixar o texto no tamanho maior, a tag BIG foi utilizada. Mas ela se tornou obsoleta. <br>
+        Ainda funciona, porém não é mais usada. <br>
+        Lembra que o HTML é semântico, e tags quem possuiam apenas forma agora são usadas de outra maneira, agora dentro do CSS. <br>
+        Tipo: Em vez disso, use isso. <br><br>
+        Para deixar o texto pequeno, foi usada a tag SMALL.
+    </p>
+
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar <del>um texto como excluído</del> para indicar que ele deve ser lido, mas não cosiderado. <br>
+    Nesse Caso, usa-se a tag DEL, e o texto será riscado. (Tá lá, deve ser lido, mas não considerado.)</p>
+
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase e indeicar que ele foi adicionado depois. <br>
+    Nesse texto, o sublinhado é adicionado por meio da tag INS.</p>
+    <p>Existe tembém o <u>sublinhado</u> com a tag U (não semântica).</p>
+
+    <h2>Texto sobreescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>20</sup>+3. <br>
+        Usa-se a tag SUP para adicionar um texto logo acima do texto.
+    </p>
+
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O. <br>
+        Usa-se a tag SUB para adicionar um texto logo abaixo do te
+    </p>
+</body>
+</html>

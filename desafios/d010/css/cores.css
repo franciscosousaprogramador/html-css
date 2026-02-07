@@ -1,0 +1,66 @@
+/*Cores*/
+.cor1 {
+    color: #3ddc84;
+    /*Esmeralda*/
+    /*escolhida       cor principal*/
+}
+
+.cor2 {
+    color: #214e34;
+    /*Abeto Escuro*/
+    /*escolhida    cor principal 2*/
+}
+
+.cor3 {
+    color: #b7f7a7;
+    /*verde claro*/
+    /*escolhida     cor secundária*/
+}
+
+.cor4 {
+    color: #bdd5ea;
+    /*Céu pálido*/
+}
+
+.cor5 {
+    color: #546e59;
+    /*Azul-petróleo escuro*/
+}
+
+.cor6 {
+    color: #55946e;
+    /*Verde-mar*/
+}
+
+.cor7 {
+    color: #114b5f;
+    /*Verdep-azuado escuro*/
+}
+
+.cor8 {
+    color: #d5f9dc;
+    /*escolhida     cor de fundo*/
+}
+
+.cor9 {
+    color: #3f4b3b;
+    /*granito*/
+    /*escolhida     cor de sombras*/
+}
+
+/*paleta mono*/
+.corA {
+    color: hsl(120, 10%, 60%);
+    color: hsl(120, 20%, 40%);
+    color: hsl(130, 30%, 50%);
+    color: hsl(140, 60%, 60%);
+    color: hsl(140, 70%, 20%);
+}
+
+.corB {
+    color: hsl(140, 70%, 20%);
+    color: hsl(140, 70%, 30%);
+    color: hsl(140, 70%, 45%);
+    color: hsl(140, 40%, 60%);
+    color: hsl(140, 70%, 80%);
+}

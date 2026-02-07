@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../ex004/favicon.ico" type="image/x-icon">
+    <title>Exercício 009</title>
+</head>
+<body>
+    <h2>Capítulo 09</h2>
+    <h3 style="color: blue;">Ex009 - 04/11/2025</h3>
+    <h1>Listas</h1>
+    <hr>
+
+    <h1>Trabalhado com Listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <p>Exemplo de lista:</p>
+    <ol type="1" start="1">
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalhado</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+    <p>A lista acima pode ser criada usando a tag OL e para cada item de lista, use a tag LI. <br>
+        Você também pode mudar o tipo de lista passando o TYPE como parâmetro dentro da tag OL. <br>
+        Existem quatro tipos: 1, A, a, I e i. Além de poder mudar o índice de início da lista com a tag START e o número de . Ex.:
+    </p>
+    <ol type="A" start="11"> <!--Maior número inteiro calculado em programação: 2.147.483.647-->
+        <li>Levantar</li>
+        <li>Arrumar a cama</li>
+        <li>Ir ao parque</li>
+        <li>Fazer exercícios</li>
+    </ol>
+    <ol type="a">
+        <li>Beber água</li>
+        <li>Falar com João</li>
+        <li>Voltar para casa</li>
+    </ol>
+    <ol type="I" start="8">
+        <li>Fazer um lanche</li>
+        <li>Ir pescar</li>
+        <li>Pegar um peixe</li>
+    </ol>
+    <ol type="i">
+        <li>Voltar para casa</li>
+        <li>Comer o peixe</li>
+        <li>Descansar</li>
+    </ol>
+
+    <h2>Listas Não Ordenadas</h2>
+    <p>Uma lista onde não existe numeração dos itens. Não importa a ordem, o que importa é se os ítem aparecem ou não na lista.</p>
+    <ul type="disk">
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Alface</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+    </ul>
+    <p>Esse tipo de lista também pode ser personalisada. <br>
+        Na tag TYPE, você tem três opções: DISK (disco), CIRCLE (circulo) e SQUARE (quadrado).
+    </p>
+
+    <h2>Capítulo 09</h2>
+    <h3 style="color: blue; margin-top: -16px;">Ex009 (Continuação) - 08/11/2025</h3>
+
+    <p>Vejamos um exemplo de lista ordenadas juntas (uma lista dentro de outra)</p>
+
+    <h2>Minhas linguagens favoritas</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="5">
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+
+    <p>Lista e sub-listas começam sempre do primeiro item. Usando a tag START, você pode alterar o número de início para a lista.</p>
+
+    <p>Agora, uma lista não ordenada dento de uma ordenada.</p>
+
+    <h2>Meus jogos favoritos</h2>
+    <ol>
+        <li>NES</li>
+        <ul type="square">
+            <li>Mario Bros</li>
+            <ul type="circle">
+                <li>Mario Bros 3</li>
+                <li>Mario: Lost Levels</li>
+            </ul>
+            <li>Ninja Gaiden</li>
+        </ul>
+        <li>SNES</li>
+        <ul type="square">
+            <li>Mario</li>
+            <li>Donkey Kong</li>
+        </ul>
+        <li>PlayStation</li>
+        <ul type="square">
+            <li>Final Fantasy</li>
+            <li>Castlevania</li>
+        </ul>
+    </ol>
+    <p>Existem níveis de lista, ou seja, um item da lista, pode ter outra lista dentro dele, e em outro item dessa lista também pode conter outras listas, e assim por diante.</p>
+
+    <p>Há ainda um terceiro tipo de lista:</p>
+
+    <h2>Lista de Definição</h2>
+    <dl>
+        <dt>Termo</dt>
+        <dd>Definição</dd>
+    </dl>
+
+    <p>Esse tipo de lista não possue marcação, apenas um recuo para a definição. <br>
+        Use a tag DL para ter essa lista. O termo usa a tag DT e a definição desse termo, a tag DD. Veja:
+    <pre style="font-family: 'Courier New', Courier, monospace;">
+    &lt;dl>                      &lt;!-- Abertura de lista --&gt;
+        &lt;dt>Termo&lt;/dt>        &lt;!-- Item da lista --&gt;
+        &lt;dd>Definição&lt;/dd>    &lt;!-- Definição do item da lista --&gt;
+    &lt;/dl>                     &lt;!-- Fechamento de lista --&gt;
+    </pre>
+    </p>
+
+    <p>Exemplo:</p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+    </dl>
+</body>
+</html>

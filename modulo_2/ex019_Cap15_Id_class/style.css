@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/*  |___Tabela___|
+    |_HTML_|_CSS_|
+    |__id__|__#__|
+    |class_|__.__|
+    |______|_____|
+*/
+
+body {
+    background-color: #D1E3DD;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #004F2D;
+}
+
+h1#principal {
+    text-align: center;
+    background-color: #004F2D;
+    color: #D1E3DD;
+    padding: 20px;
+}
+
+h2 {
+    color: #0A8754;
+}
+
+.basico {
+    color: #0A8754;
+}
+
+.intermediario {
+    color: #CA8754;
+}
+
+.avancado {
+    color: #CA0754;
+}

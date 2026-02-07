@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 009</title>
+</head>
+<body>
+    <h2>Capítulo 08</h2>
+    <h3 style="color: blue;">Ex008-B - 01/11/2025</h3>
+    <h1>Outros tipos de formatação</h1>
+    <hr>
+
+    <h1>Outras formatações</h1>
+    <h2>código-fonte / Pré formatado</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem javascript.</p>
+
+    <p>O código abaixo está na linguagem python.</p>
+    <pre>
+        <code>
+    num = int input('Digite um número:')
+    if num % 2 == 0:
+        print(f'O número (nun) é PAR')
+    else:
+        print(f'O número (num) é IMPAR')
+    print('Fim do programa')
+        </code>
+    </pre>
+
+    <p>A tag CODE faz com que o texto seja monoespaçado, ou seja, cada caracter vai ocupar o mesmo espaço. <br> 
+    A tag PRE engloba o texto inteiro considerando parágrafos, espaços e quebras de linha. Dessa forma, tudo o que for escrito no código vai aparecer exatamente igual na página.</p>
+
+    <h2>Citações simples</h2>
+    <p>São citações mais curtas ou sem quebras de linha.</p>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q>.</p>
+    <p>Para adicionar aspas à citação, foi usado a tag Q. Não somente aspas "", pois neste caso, faz referência a uma frase dita por alguém especíco, que no exemplo é <b>o pai de um amigo</b>, que traz um sentido e um significado.</p>
+    <p>Apenas adicionar as aspas manualmente no código, traz apenas a forma. Ex.: "Mais ou menos interessante". É uma frase comum que pode ser dita por qualquer pessoa e não traz uma referência especíca e pode ser aplicada a várias coisas. Assim, as aspas podem ser usadas diretamente no texto sem ter que usar esta tag.</p>
+    <p>Portanto, sempre que for citação ou algo dito por alguém especíco mencionado, use a tag Q.</p>
+
+    <h2>Citações completas</h2>
+    <p>Segundo Jeff Noble, no seu livro HTML para leigos:</p>
+    <blockquote cite="https://books.google.com.br/books/about/HTML_XHTML_e_CSS_Para_Leigos.html?hl=pt-BR&id=E8ZtDwAAQBAJ&redir_esc=y#v=onepage&q=HTML&f=false">
+        A diferença entre elementos inline e um bloco de texto  é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.
+    </blockquote>
+    <p>A citação acima faz referência a um trecho de um livro, complementando assim, uma citação completa.</p>
+
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language (Linguagem de Marcação de Hipertexto)">HTML</abbr> e <abbr title="Cascading Style Sheets (Folhas de estilo em cascata)">CSS</abbr>. Estou adorando!</p>
+    <p>No exemplo acima, as abreviações possuem significado. Usando a tag ABBR para a envelopar, você pode adicionar um título à mesma, que ficará visível ao passar o cursor do mouse sebre ela.</p>
+
+    <h2>Texto Invertido</h2>
+    <p><bdo dir="ltr">Estou aprendendo a criar coisas em HTML.</bdo>
+    <br> Ao contrário fica: <br>
+    <bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo>
+    </p>
+    <p>Para criar um texto invertido, use a tag BDO e no parâmetro DIR use <code style="background-color:antiquewhite;">"rtl"</code> (right to left) / da direita para esquerda. Ex.: </p>
+    <p>
+    <code style="background-color: black; color: antiquewhite; padding: 10px;">
+        &lt;bdo dir="rtl">Estou aprendendo a criar coisas em HTML.&lt;/bdo>
+    </code>
+    </p>
+    
+</body>
+</html>

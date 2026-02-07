@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'work Sans', Arial, Helvetica, sans-serif;
+            /* 
+            Medidas Absolutas
+            Centímetro (cm), Milímetro (mm), Polegada (in)
+            Pixel (px), Ponto (pt), Paica (pc)
+
+            Medidas Relativas
+            Altura atual da fonte (em), tamanho do M Maiúsculo
+            Largura atual da fonte (ex), '' '' do x minúsculo
+            (rem), parece com (em) mas relativo a fonte do body
+            largura da viewport (vw), porcento da largura da tela
+            (vh) altura da viewport, porcento da atura da tela
+            (%)
+
+            Recomendação: use pixel (px) e (em) Relativo ao tamanho do M Maiúsculo da fonte
+
+            16px geralmente = 1em
+            */
+            /* font-size: 16px;            /* Tamanho */
+            /* font-weight: bolder;        /* Peso */
+            /* font-style: italic;         /* Tipo */
+            /* text-decoration: underline; /* Sublinhado */
+            /*  Literal: lighter normal bold bolder
+                Numérica: 100 200 300 [...] 800 900
+            */
+        }
+        h1 {
+            /*
+            font-family: 'work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic; */
+            /* shorthand font       OBEDEÇA A ORDEM DOS PARÂMETROS!!!
+                font-style => font-weight => font-size => font-family
+            */
+            font: italic bolder 3em 'work Sans', sans-serif;
+        }
+        h2 {
+            font: bolder 2em 'work Sans';
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore soluta officia excepturi enim et? Sit optio illo quaerat et, at perspiciatis tempora dolorum itaque enim tempore id. A, quisquam iure? Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem repudiandae maiores ex consequuntur, placeat sunt. Vitae odio ea placeat. Ea fuga adipisci est voluptatem in, consequuntur voluptas recusandae quia impedit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos molestiae at incidunt, doloremque facilis recusandae tenetur earum? Porro sapiente similique, at voluptatibus, nemo ex inventore beatae saepe consequatur asperiores ad.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur pariatur, nostrum non unde culpa, tempora adipisci ut fugit inventore id animi nemo laudantium voluptatum ratione? Quos quas at dolore veritatis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus provident deserunt alias? Sit reiciendis dolores natus dolore nulla fugit, ducimus pariatur error nobis distinctio, voluptatum assumenda expedita ut quasi veniam.</p>
+
+</body>
+</html>

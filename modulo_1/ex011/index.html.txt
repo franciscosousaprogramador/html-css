@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+
+<body>
+    <h2>Capítulo 11</h2>
+    <h3 style="color: blue;">Ex011 - 25/12/2025</h3>
+    <hr>
+
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu
+        navegador.</p>
+
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <picture>
+            <source media="(max-width: 750px)" srcset="assets/images/img-p.png" type="image/png">
+            <source media="(max-width: 1500px)" srcset="assets/images/img-m-2.png" type="image/png">
+            <img src="assets/images/img-g-2.png" alt="imagem flexivel">
+        </picture>
+    </div>
+    <br>
+    <br>
+
+    <h1>Reproduzindo áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+
+    <p>Primeira e mais simples</p>
+    <audio src="assets/audio/Beat Your Competition - Vibe Tracks.mp3" controls></audio>
+
+    <p>Segunda forma</p>
+    <audio preload="metadata" controls>
+        <source src="assets/audio/Cartoon - On & On By.Ailton Games.mp3" type="audio/mpeg">
+    </audio>
+
+    <br>
+
+    <h1>Código fonte da página</h1>
+    <pre style="font-family: 'Courier New', Courier, monospace; font-size: 14px; background-color: antiquewhite; color: deeppink; padding: 20px 40px 0px 0px; width: max-content">
+    &lt;!DOCTYPE html>
+    &lt;html lang="pt-br">
+    &lt;head>
+        &lt;meta charset="UTF-8">
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+        &lt;title>Mídias em HTML5&lt;/title>
+    &lt;/head>
+
+    &lt;body>
+        &lt;h1>Capítulo 11&lt;/h1>
+        &lt;h1>Imagem dinâmica&lt;/h1>
+        &lt;p>Tente abrir esse site em vários dispositivos diferentes ou
+            simplesmente aumente e diminua o tamanho do seu navegador.&lt;/p>
+
+        &lt;div style="
+            display: flex;
+            justify-content: center;
+            align-items: center;">
+
+            &lt;picture>
+                &lt;source media="(max-width: 750px)"
+                    srcset="assets/images/img-p.png" type="image/png">
+                &lt;source media="(max-width: 1500px)"
+                    srcset="assets/images/img-m-2.png" type="image/png">
+                &lt;img src="assets/images/img-g-2.png" alt="imagem flexivel">
+            &lt;/picture>
+        &lt;/div>
+
+        &lt;h1>Reproduzindo áudios&lt;/h1>
+        &lt;p>Vamos aprender a reproduzir áudios em HTML5.&lt;/p>
+
+        &lt;p>Primeira e mais simples&lt;/p>
+        &lt;audio src="assets/audio/Beat Your Competition - Vibe Tracks.mp3"
+            controls>&lt;/audio>
+
+        &lt;p>Segunda forma&lt;/p>
+        &lt;audio preload="metadata" controls>
+            &lt;source src="assets/audio/Cartoon - On & On By.Ailton Games.mp3"
+                type="audio/mpeg">
+        &lt;/audio>
+    &lt;/body>
+
+    &lt;/html>
+    </pre>
+</body>
+
+</html>

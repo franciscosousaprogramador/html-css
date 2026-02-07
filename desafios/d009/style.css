@@ -1,0 +1,47 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #111;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.videos {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px;
+    width: max-content;
+}
+
+.video-curso {
+    width: 560px;
+    height: 315px;
+}
+
+.ver-curso {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    transition: 60ms;
+}
+
+.ver-curso:hover {
+    color: #0df;
+    transition: 100ms;
+}
+
+@media screen and (max-width: 420px) {
+    .videos{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .video-curso{
+        width: 380px;
+        height: 240px;
+    }
+}

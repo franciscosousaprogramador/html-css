@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: gray;
+            margin: 0px;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.25);
+        }
+        nav {
+            background-color: rgb(100, 100, 100);
+            padding: 10px;
+            box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.25);
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+            box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.25);
+            padding: 5px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+            box-shadow: inset 2px 2px 5px 1px rgba(0, 0, 0, 0.25);
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.25);
+        }
+        section {
+            box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.25);
+            margin: 10px;
+            padding: 5px;
+            border-radius: 8px;
+        }
+        h1, h2, p {
+            box-shadow: inset 2px 2px 5px 1px rgba(0, 0, 0, 0.25);
+            padding: 16px;
+        }
+        article {
+            background-color: lightgray;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.25);
+        }
+        article > aside {
+            background-color: lightslategray;
+            box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.25);
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esporte Políca Tecnologia</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta soluta necessitatibus voluptatibus autem! Exercitationem nesciunt explicabo sit corporis quaerat, sint veritatis numquam, voluptas enim quibusdam dolor quas, in velit obcaecati.</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre um país</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nisi qui aut adipisci magni ut rem esse facilis recusandae deleniti quam iusto obcaecati, reprehenderit nulla vitae quidem quod saepe ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus animi cum doloribus facilis ex dolorem laborum optio ad fuga laboriosam iste soluta sit consequuntur consectetur, obcaecati modi eum debitis? Quos! <br> <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur ut nobis necessitatibus dolor dignissimos magnam quidem voluptas natus aperiam nihil? Ipsum tempore illum nobis, ex debitis facilis a? Sed, rerum.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+                <h2>Outra Notícia</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae quasi corrupti eius. Sint aliquid deleniti at, debitis quia nesciunt quis voluptate accusantium soluta ipsa eius expedita? Praesentium, ex odio? Non. <br> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, accusamus ducimus. Illum odit voluptatem corrupti veniam nam eos, porro at debitis officia ex, error sit dignissimos culpa deserunt, quibusdam animi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, aliquam dolorem eius asperiores blanditiis ducimus perspiciatis nulla aspernatur omnis ad, eligendi corrupti itaque in fuga dolor fugit, molestias quos. Neque? <br> <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore non odit aliquam voluptas corrupti rem iusto dolores exercitationem veritatis magni, voluptates reprehenderit accusamus fugit mollitia eligendi ad, recusandae maiores saepe.</p>
+                <aside>
+                    <p>Artigo escrito por João Oliveira</p>
+                </aside>
+            </article>
+        </section> 
+    </main>
+    <footer>
+        <p>Desenvolvido pelo CursoEmVideo</p>
+    </footer>
+</body>
+</html>

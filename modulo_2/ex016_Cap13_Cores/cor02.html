@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+
+    <style>
+        code {
+            background-color: #1E1E1E;
+            color: #2E88DA;
+            font-family: 'Courier New';
+            padding: 3px;
+        }
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-image: linear-gradient(to bottom,
+            #4260D5, #A42ABA, #E40071, #F76502, #F7CC62   
+            );
+            background-attachment: fixed;/*plano de fundo fixo na tela*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Gradiente</h1>
+    <p>Para criar um gradiente em CSS, use a propridedade <code>background-image</code> com a função <code>linear-gradient()</code></p>
+    <p>Ex.: <code>background-image: linear-gradient(direcao, cor, cor);</code> e quantas cores você quiser.</p>
+
+    <p>Direções: to top, to right, to bottom, to left.</p>
+    <p>Você também pode usar direções baseadas em ângulos. <br>
+    Ex.: <br>
+        45deg &lpar;diagonal do ponto inferior esquerdo ao superior direito&rpar;; <br>
+        90deg &lpar;linear da esquerda para a direita&rpar;;
+    </p>
+    
+</body>
+</html>

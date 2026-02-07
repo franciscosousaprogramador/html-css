@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h2>Capítulo 11</h2>
+	<h3 style="color: blue;">Ex012 - 27/12/2025</h3>
+
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <hr>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    
+    <h3>Método 1:</h3>
+    <p>Um só aquivo de mídia usado para todos [não recomendado]. <br> Problemas de compatibilidade em alguns navegadores.</p>
+    <pre style="font-family: consolas;">&lt;video src="media/my_movie.mp4" width="560" controls>&lt;/video></pre>
+    <video src="media/my_movie.mp4" width="560" controls></video>
+
+    <h3>Método 2:</h3>
+    <p>Vários aquivos de formatos diferentes [recomendado]. <br>
+    O navegador tenta carregar arquivos até encontar um que seja compatível e possa ser exibido.</p>
+
+    <pre style="font-family: consolas;">
+    &lt;video width="560" controls loop poster="media/limoes-capa.png">
+        &lt;source src="media/my_movie.mp4" type="video/mp4">
+        &lt;source src="media/my_movie.webm" type="video/webm">
+        &lt;p>Seu navegador não tem compatibilidade com reprodução de videos.&lt;/p>
+    &lt;/video>
+    </pre>
+
+    <p>No exemplo foram usados somante dois formatos de arquivo. <br>Porém, quanto mais source src tiver com arquivos em formatos diferentes, melhor. <br>Pois aumenta as chances de compatibilidade com mais navegadores.</p>
+
+    <video width="560" controls loop poster="media/limoes-capa.png">
+        <source src="media/my_movie.mp4" type="video/mp4">
+        <source src="media/my_movie.webm" type="video/webm">
+        <p>Seu navegador não tem compatibilidade com reprodução de videos.</p>
+    </video>
+    
+    <h1>MUITO IMPORTANTE:</h1>
+    <h4>Vídeos hospedados no próprio site usando a TAG &lt;video> geram um consumo enorme de tráfego de dados, ou seja, o serviço de hospedagem se torna muito mais caro para o cliente dono do site.</h4>
+
+    <p>Existem formas muito melhores de adicionar vídeos no seu site, e além disso, geram consumo de banda muito menor. <br>O que também influencia no valor de hospedagem, ou seja, o cliente vai pagar o valor padrão, com adição mínima.</p>
+
+    <hr>
+    <h1>Como adicionar vídeos ao site da melhor forma?</h1>
+    <p>A melhor maneia de fazer isso, é incorporar o vídeo que está em outro servidor, como o YouTube por exemplo.<br>
+    Isso faz com que o vídeo seja reproduzido direto do próprio YouTube, sem interferir no servidor do seu site.</br>
+
+
+    <h2>Inserindo vídeos do YouTube</h2>
+    <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/OzUnqQk4eOg?si=OIRtG6Iy4Gb2i-Xk"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+    </iframe>
+
+    <p>Incorporar vídeos dessa forma, faz com que os dados de banda consumidos sejam do servidor do YouTube e não mais do seu prório servidor onde seu site está hospedado, reduzindo os custos aos valores de planos padrão.</p>
+
+</body>
+</html>

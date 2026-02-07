@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 010</title>
+
+</head>
+
+<body>
+    <h2>Capítulo 10</h2>
+    <h3 style="color: blue;">Ex010 - 08/11/2025</h3>
+    <h1>Trabalhando com links</h1>
+    <hr>
+
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">repositório público no GitHub</a></p>
+    <p>Você também pode acessar meu <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">canal gratuito no YouTube</a></p>
+
+    <p>Para usar um link externo, use a tag A. Veja como:</p>
+    <p style="font-family: 'Courier New', Courier, monospace;">
+        &lt;p>Você pode acessar o meu &lt;a href="link-de-redirecionamento">repositório público no GitHub&lt;/a>&lt;/p>
+    </p>
+    <p>Para abrir o link em uma nova guia, use atributo TARGET igual a "_blank" e REL igual a "external". Veja:</p>
+    <p style="font-family: 'Courier New', Courier, monospace;">
+        &lt;p>Você pode acessar o meu &lt;a href="link-de-redirecionamento" target="_blank" rel="external">repositório público no GitHub&lt;/a>&lt;/p>
+    </p>
+    <p>Isso deve ser feito SEMPRE que o link redirecionar o usuário para um site externo que não pertence a VOCÊ. <br>
+        Como o exemplo acima, que direciona para o repositório público do professor Gustavo Guanabara no GitHub.
+    </p>
+    <p>Para link que redirecionam para páginas dentro do seu próprio site, o atributo TARGET recebe o valor "_self".</p>
+
+    <h1>Usando links internos</h1>
+    <p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="ex010pg2.html" target="_self" rel="next">segunda página</a>.</p>
+    <p>Você também pode acesar a nossa <a href="ex010_pg3/pag003.html" target="_self" rel="next">terceira página</a></p>
+    <br>
+
+    <p>A terceira página está dentro de uma pasta. Assim, para acessar, indique o caminho completo do arquivo: pasta/arquivo.html</p>
+    <p>A terceira página possui um link para voltar para esta página. Porém como está em uma pasta, no código html, é necessário indicar para voltar uma pasta para encontar o arquivo desta página.</p>
+
+    <p>Veja o comando da página 1 para a 3:</p>
+    <p style="font-family: 'Courier New', Courier, monospace;">
+    &lt;p>Você também pode acesar a nossa &lt;a href="pasta/arquivo.html" target="_self" rel="next">terceira página&lt;/a>&lt;/p>
+    </p>
+
+    <p>Veja o comando da página 3 voltando para a 1:</p>
+    <p style="font-family: 'Courier New', Courier, monospace;">
+        &lt;p>Esta é a terceira página&lt;/p> <br>
+        &lt;p>&lt;a href="<mark>../</mark>ex010.html">Voltar para a primeira página&lt;/a>&lt;/p>
+    </p>
+
+    <hr>
+    <h3 style="color: blue;">Ex010 - Continuação - 26/12/2025</h3>
+
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="livro/meulivro.pdf" download="meulivro.pdf" type="aplication/pdf">Baixar o livro em PDF</a></li>
+        <li><a href="livro/meulivro.zip" download="meulivro.zip" type="aplication/zip">Livro compactado em ZIP</a></li>
+    </ul>
+</body>
+</html>
